@@ -78,7 +78,6 @@ function editarDatos() {
 
     });
 }
-
 function insertarDatos() {
     mongo.connect('mongodb://localhost:27017/paginacion', (err, client) => {
         if (err) {
