@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apeido</th>
+        <th>Email</th>
+        <th>Rol</th>
+        <th>Password</th>
+        <th>Ver Perfil</th>
+    </tr>
+{{#each .}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{this.surname}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.role}}</td>
+            <td><img id="editar" src="/images/pencil.ico"><input type="text"  class="hideme" value="{{this.password}}"></td>
+            <td><a href="#">Ver</a></td>
+        </tr>
+{{/each}}
+</table>
